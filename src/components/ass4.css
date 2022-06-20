@@ -1,0 +1,28 @@
+body{
+    background-image:url(./Tranquil.jpg) ;
+}
+
+.navbar-nav{
+    background-color: blue;
+    width:98vw;
+    height:70px;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content:space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h1{
+    position: relative;
+    right:600px;
+}
+.nav-link{
+    color: white;
+}
+table{
+    border:2px solid black;
+    background-color: white;
+    position: relative;
+    top:100px;
+}
