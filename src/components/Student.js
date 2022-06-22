@@ -1,64 +1,63 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './ass4.css';
 
 function Student() {
   return (
-    
-    <table class="table table-striped">
-    <thead>
+    <div>
+    <h1 className='h'>Student Profile</h1>
+    <Link to = '/AddStud'><button className='add'>Add Student</button></Link>
+    <table>
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Age</th>
-        <th scope="col">Course</th>
-        <th scope="col">Batch</th>
-        <th scope="col">Change</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">John</th>
-        <td>24</td>
-        <td>MERN</td>
-        <td>October</td>
-        <td>Edit</td>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Batch</th>
+        <th>Change</th>
       </tr>
       <tr>
-        <th scope="row">Doe</th>
+        <td>John</td>
         <td>25</td>
         <td>MERN</td>
-        <td>November</td>
-        <td>Edit</td>
+        <td>October</td>
+        <td><Link to = '/EditStudent/'>Edit</Link></td>
       </tr>
       <tr>
-      <th scope="row">Mary</th>
+        <td>Doe</td>
+        <td>23</td>
+        <td>MERN</td>
+        <td>January</td>
+        <td><Link to = '/EditStudent/'>Edit</Link></td>
+
+      </tr>
+      <tr>
+        <td>Smily</td>
+        <td>23</td>
+        <td>MERN</td>
+        <td>October</td>
+        <td><Link to = '/EditStudent/'>Edit</Link></td>
+
+      </tr>
+      <tr>
+        <td>Sam</td>
+        <td>25</td>
+        <td>MERN</td>
+        <td>October</td>
+        <td><Link to = '/EditStudent/'>Edit</Link></td>
+
+      </tr>
+      <tr>
+        <td>Lumy</td>
         <td>23</td>
         <td>MERN</td>
         <td>November</td>
-        <td>Edit</td>
+        <td><Link to = '/EditStudent/'>Edit</Link></td>
+
       </tr>
-      <tr>
-      <th scope="row">Sam</th>
-        <td>25</td>
-        <td>MERN</td>
-        <td>January</td>
-        <td>Edit</td>
-      </tr>
-      <tr>
-      <th scope="row">Rony</th>
-        <td>24</td>
-        <td>MERN</td>
-        <td>November</td>
-        <td>Edit</td>
-      </tr>
-      <tr>
-      <th scope="row">Lumy</th>
-        <td>25</td>
-        <td>MERN</td>
-        <td>September</td>
-        <td>Edit</td>
-      </tr>
-    </tbody>
-  </table>
+    </table>
+    </div>
+    
+    
   )
   
 }
